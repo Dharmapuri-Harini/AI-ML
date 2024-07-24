@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Cursive;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .signup-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 30px;
+        }
+
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .signup-container input[type="submit"] {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border:blac;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signup-container input[type="submit"]:hover {
+            background-color: orange;
+        }
+      
+    button{
+            background-color: orange;
+            color: black;
+            padding: 10px 20px;
+            border: black ;
+            border-radius: 6px;
+            cursor:pointer;
+        }
+        .signup-container button:hover {
+            background-color: lightgreen;
+        }
+     
+     
+      
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="your_server_script.php" method="post">
+            <input type="text" name="fullname" placeholder="Full Name" required><br>
+            <input type="email" name="email" placeholder="Email Address" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+
+</html>

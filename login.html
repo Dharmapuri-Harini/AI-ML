@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=deviceidth, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+             text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .login-container {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2828;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-container h2 {
+            margin-bottom: 30px;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid ;
+            border-radius: 9px;
+        }
+        .login-container input[type="login"] {
+            background-color: #4CAF50;
+            color:#ffff00;
+            padding: 20px 20px;
+            border: black;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 20px;
+        }
+        button{
+            border-radius: 5px;
+            
+        }
+        .login-container input[type="login"]:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="your_server_script.php" method="post">
+            <input type="email" name="email" placeholder="email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body></html>
