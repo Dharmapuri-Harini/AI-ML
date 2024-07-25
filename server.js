@@ -8,7 +8,7 @@ const app = express();
 const port = 5000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join( __dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'views')));
 
 const db = mysql.createConnection({
     host: 'localhost',
@@ -19,10 +19,11 @@ const db = mysql.createConnection({
 
 db.connect((err) => {
     if (err) throw err;
-    console.log('connected to database');
+    console.log('Connected to database');
 });
-require('./route')(app,db,bcrypt);
 
-app.listen(port, ()=>{
-    console.log(`Server running on port ${port}`);
+require('./route')(app, db, bcrypt);
+
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
 });
